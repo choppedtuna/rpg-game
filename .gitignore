@@ -1,5 +1,6 @@
 # Project place file
-/rpg-game.rbxlx
+/builds
+/.env
 
 # Roblox Studio lock files
 /*.rbxlx.lock

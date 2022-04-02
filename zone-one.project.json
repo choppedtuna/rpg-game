@@ -1,0 +1,64 @@
+{
+  "name": "rpg-game",
+  "tree": {
+    "$className": "DataModel",
+
+	"$properties": {
+		"PlaceId": 9261983626
+	},
+
+    "ReplicatedStorage": {
+	  "Inventory": {
+		"$path": "src/shared/Inventory"
+	  }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      },
+	  "placeId": {
+		"$className": "IntValue",
+		"9261983626": {
+			"$className": "ParticleEmitter"
+		}
+	  }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+
+    "Workspace": {
+		"$properties": {
+		  "FilteringEnabled": true
+		},
+		"Map": {
+		  "$path": "src/assets/zone-1"
+		}
+	  },
+
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0,
+          0,
+          0
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "Voxel"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}

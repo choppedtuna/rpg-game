@@ -4,15 +4,24 @@
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "Common": {
-        "$path": "src/shared"
-      }
-    },
+		"Trading": {
+		  "$path": "src/shared/Trading"
+		},
+		"Inventory": {
+		  "$path": "src/shared/Inventory"
+		}
+	  },
 
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
-      }
+      },
+	  "placeId": {
+		"$className": "IntValue",
+		"9261969147": {
+			"$className": "ParticleEmitter"
+		}
+	  }
     },
 
     "StarterPlayer": {
@@ -27,29 +36,11 @@
       "$properties": {
         "FilteringEnabled": true
       },
-      "Baseplate": {
-        "$className": "Part",
-        "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
-        }
+      "Map": {
+        "$path": "src/assets/hub"
       }
     },
+	
     "Lighting": {
       "$properties": {
         "Ambient": [
@@ -63,6 +54,7 @@
         "Technology": "Voxel"
       }
     },
+
     "SoundService": {
       "$properties": {
         "RespectFilteringEnabled": true
